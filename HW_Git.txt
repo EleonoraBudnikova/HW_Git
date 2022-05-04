@@ -1,0 +1,123 @@
+GIT Homework 1
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+	Cоздаем новый репозиторий на GitHub с названием JSON, public, add a README file
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+	$ git clone https://github.com/EleonoraBudnikova/JSON.git
+ 6. Внутри локального JSON создать файл “new.json”.
+	$ touch new.json
+ 7. Добавить файл под гит.
+	$ git add new.json
+ 8. Закоммитить файл.
+	$ git commit -m "created new.json"
+ 9. Отправить файл на внешний GitHub репозиторий.
+	$ git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+	$ vim new.json
+{
+ "full name": "Леонтьева Анастасия Сергеевна",
+ "age": 39,
+ "pets quantity": 1,
+ "future expected salary": "$2000"
+}
+
+ 11. Отправить изменения на внешний репозиторий.
+	$ git add new.json
+	$ git commit -m "added data"
+	$ git push
+
+ 12. Создать файл preferences.json
+	$ touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+	vim preferences.json
+{
+        "my favourite film":"Spirited Away by Hayao Miyazaki ",
+        "my favourite tv-series":"Friends",
+        "my food":"mediterranean cuisine",
+        "favourite season":"spring",
+        "country to visit":"Japan"
+}
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON.
+	$ vim skills.json
+{
+        "skill1":"Terminal",
+        "skill2":"Git",
+        "skill3":"JS",
+        "skill4":"SQL",
+        "skill5":"Jmeter",
+        "skill6":"Scrum"
+}
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+	$ git add preferences.json skills.json
+	$ git commit -m "added data"
+	$ git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+	в GitHub Add file > Create file > bug_report.json
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	в GitHub Commit new file
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+	в GitHub Edit this file (Pencil-icon)
+{
+"user_action": "requested stream",
+"request": "https://www.youtube.com/watch?v=7im9BFEHzEs",
+"content_language": "GB",
+"service": "YouTube",
+"package": "org.schabi.newpipe",
+"version": "0.17.4",
+"os": "Linux Android 9 - 28",
+"time": "2019-12-14 19:44",
+"exceptions": [
+"org.schabi.newpipe.extractor.services.youtube.extractors.YoutubeStreamExtractor$DecryptException: Could not load decrypt function\n\tat org.schabi.newpipe.extractor.services.youtube.extractors.YoutubeStreamExtractor.loadDecryptionCode(YoutubeStreamExtractor.java:777)\n\tat org.schabi.newpipe.extractor.services.youtube.extractors.YoutubeStreamExtractor.onFetchPage(YoutubeStreamExtractor.java:646)\n\tat org.schabi.newpipe.extractor.Extractor.fetchPage(Extractor.java:52)\n\tat org.schabi.newpipe.extractor.stream.StreamInfo.getInfo(StreamInfo.java:63)\n\tat org.schabi.newpipe.extractor.stream.StreamInfo.getInfo(StreamInfo.java:59)\n\tat org.schabi.newpipe.util.ExtractorHelper.lambda$getStreamInfo$3(ExtractorHelper.java:115)\n\tat org.schabi.newpipe.util.-$$Lambda$ExtractorHelper$5fJcha6Sq5APJBLdG6osaJby-mc.call(Unknown Source:4)\n\tat io.reactivex.internal.operators.single.SingleFromCallable.subscribeActual(SingleFromCallable.java:44)\n\tat io.reactivex.Single.subscribe(Single.java:3438)\n\tat io.reactivex.internal.operators.single.SingleDoOnSuccess.subscribeActual(SingleDoOnSuccess.java:35)\n\tat io.reactivex.Single.subscribe(Single.java:3438)\n\tat io.reactivex.internal.operators.maybe.MaybeFromSingle.subscribeActual(MaybeFromSingle.java:41)\n\tat io.reactivex.Maybe.subscribe(Maybe.java:4154)\n\tat io.reactivex.internal.operators.maybe.MaybeConcatArray$ConcatMaybeObserver.drain(MaybeConcatArray.java:153)\n\tat io.reactivex.internal.operators.maybe.MaybeConcatArray$ConcatMaybeObserver.request(MaybeConcatArray.java:78)\n\tat io.reactivex.internal.operators.flowable.FlowableElementAtMaybe$ElementAtSubscriber.onSubscribe(FlowableElementAtMaybe.java:66)\n\tat io.reactivex.internal.operators.maybe.MaybeConcatArray.subscribeActual(MaybeConcatArray.java:42)\n\tat io.reactivex.Flowable.subscribe(Flowable.java:14479)\n\tat io.reactivex.internal.operators.flowable.FlowableElementAtMaybe.subscribeActual(FlowableElementAtMaybe.java:36)\n\tat io.reactivex.Maybe.subscribe(Maybe.java:4154)\n\tat io.reactivex.internal.operators.maybe.MaybeToSingle.subscribeActual(MaybeToSingle.java:46)\n\tat io.reactivex.Single.subscribe(Single.java:3438)\n\tat io.reactivex.internal.operators.single.SingleSubscribeOn$SubscribeOnObserver.run(SingleSubscribeOn.java:89)\n\tat io.reactivex.Scheduler$DisposeTask.run(Scheduler.java:578)\n\tat io.reactivex.internal.schedulers.ScheduledRunnable.run(ScheduledRunnable.java:66)\n\tat io.reactivex.internal.schedulers.ScheduledRunnable.call(ScheduledRunnable.java:57)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)\n\tat java.lang.Thread.run(Thread.java:764)\nCaused by: java.net.UnknownHostException: Unable to resolve host \"youtube.com\": No address associated with hostname\n\tat java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:157)\n\tat java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:105)\n\tat java.net.InetAddress.getAllByName(InetAddress.java:1154)\n\tat okhttp3.Dns$1.lookup(Dns.java:40)\n\tat okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:185)\n\tat okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:149)\n\tat okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:84)\n\tat okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:215)\n\tat okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)\n\tat okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)\n\tat okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)\n\tat okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)\n\tat okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)\n\tat okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)\n\tat okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)\n\tat okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)\n\tat okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)\n\tat okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)\n\tat okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:127)\n\tat okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)\n\tat okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)\n\tat okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:257)\n\tat okhttp3.RealCall.execute(RealCall.java:93)\n\tat org.schabi.newpipe.Downloader.getBody(Downloader.java:162)\n\tat org.schabi.newpipe.Downloader.download(Downloader.java:134)\n\tat org.schabi.newpipe.Downloader.download(Downloader.java:186)\n\tat org.schabi.newpipe.extractor.services.youtube.extractors.YoutubeStreamExtractor.loadDecryptionCode(YoutubeStreamExtractor.java:757)\n\t... 30 more\nCaused by: android.system.GaiException: android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)\n\tat libcore.io.Linux.android_getaddrinfo(Native Method)\n\tat libcore.io.BlockGuardOs.android_getaddrinfo(BlockGuardOs.java:172)\n\tat java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:137)\n\t... 56 more\n"
+],
+"user_comment": ""
+}
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON.
+	$ git pull
+================================
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+ 22. Клонировать репозиторий XML на локальный компьютер.
+ 23. Внутри локального XML создать файл “new.xml”.
+ 24. Добавить файл под гит.
+ 25. Закоммитить файл.
+ 26. Отправить файл на внешний GitHub репозиторий.
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+ 28. Отправить изменения на внешний репозиторий.
+ 29. Создать файл preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+ 32. Сделать коммит в одну строку.
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+ 34. На веб интерфейсе создать файл bug_report.xml.
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 38. Синхронизировать внешний и локальный репозиторий XML
+================================
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+ 3. Внутри локального TXT создать файл “new.txt”.
+ 4. Добавить файл под гит.
+ 5. Закоммитить файл.
+ 6. Отправить файл на внешний GitHub репозиторий.
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+ 8. Отправить изменения на внешний репозиторий.
+ 9. Создать файл preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+ 12. Сделать коммит в одну строку.
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+ 14. На веб интерфейсе создать файл bug_report.txt.
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT
